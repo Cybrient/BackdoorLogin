@@ -1,8 +1,58 @@
-/panel/login.php
-Yara
+Login - /panel/login.php
+Yara - 
 
 
 Memory String Based Identification
-
+----------------------------------
+Clover Wallet
+Terra Station
+Auro Wallet
+Polymesh Wallet
+Nabox Wallet
+Cyano Wallet
+LeafWallet
+Steem Keychain
+Nash Extension
+Coin98 Wallet
+Edge_Chromium
+\Maxthon5\Users
+\TorBro\Profile
+SlimBrowser
+\K-Meleon\
+Thunderbird
+passwords.txt
+Nifty Wallet
+Math Wallet
+Coinbase Wallet
+EQUAL Wallet
+Jaxx Liberty
+BitApp Wallet
+GuildWallet
+Saturn Wallet
+Ronin Wallet
+Binance Chain Wallet
+Liquality Wallet
+Hycon Lite Client
+EOS Authenticator
+GAuth Authenticator
+Trezor Password Manager
+/sqlite3.dll
+/freebl3.dll
+/mozglue.dll
+/msvcp140.dll
+/softokn3.dll
 
 Network Pattern
+---------------
+Md5: 26c406d1218adaec5e5fd1e80a9166f5
+#####################################
+http://185.7.214.239/POeNDXYchB.php
+http://185.7.214.239/sqlite3.dll
+http://185.7.214.239/freebl3.dll
+http://185.7.214.239/mozglue.dll
+http://185.7.214.239/msvcp140.dll
+http://185.7.214.239/nss3.dll
+http://185.7.214.239/softokn3.dll
+http://185.7.214.239/vcruntime140.dll
+http://185.7.214.239/POeNDXYchB.php
+http://91.243.44.130/miner/new.exe

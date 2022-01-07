@@ -1,2 +1,81 @@
-login
+Login --- /login
 Yara
+----
+rule DarkRat{
+strings:
+$magic = "MZ"
+$str1 = "&spreadtag="
+$str2 = "&operingsystem="
+$str3 = "&arch="
+$str4 = "&cpuName="
+$str5 = "&gpuName="
+$str6 = "&botversion="
+$str7 = "&antivirus="
+$str7 = "&netFramework2="
+$str8 = "&installedRam="
+$str9 = "&aornot="
+$str10 = "&computername="
+$str11 = "hwid="
+$str12 = "request="
+$str13 = "&taskid="
+$str14 = "&taskstatus="
+$str15 = "killpersistence"
+$str16 = "HACKED"
+condition:
+($magic at 0) and (all of them)
+}
+
+Memory String Based Identification
+----------------------------------
+
+C:\SOFT\RapidLoader\Release\dll.pdb
+
+5d41cf10s8gkirunmvnjadf541fvc2yk
+kernel32.dll
+GetNativeSystemInfo
+Windows 10 Server
+Windows 10
+Windows Server 2012 R2
+Windows 8.1
+Windows Server 2012
+Windows Server 2008 R2
+Windows Server 2008
+Windows Vista
+Windows XP x64
+Windows Server 2003
+Windows XP
+Windows 2000
+ Service Pack 
+wscript.exe
+cmd.exe /C ping 127.0.0.1 -n 1 -w 3000 > Nul & Del /f /q "%s"
+\Microsoft\Windows\
+SOFTWARE\Microsoft\Cryptography
+MachineGuid
+Software\Microsoft\Windows\CurrentVersion\Run
+WinSystem32
+IsWow64Process
+Content-Type: application/x-www-form-urlencoded
+text/plain
+NtUnmapViewOfSection
+SOFTWARE\Microsoft\Net Framework Setup\NDP\v2.0.50727
+SOFTWARE\Microsoft\Net Framework Setup\NDP\v3.0
+SOFTWARE\Microsoft\Net Framework Setup\NDP\v3.5
+SOFTWARE\Microsoft\Net Framework Setup\NDP\v4
+&spreadtag=
+&operingsystem=
+&botversion=
+&antivirus=
+&netFramework4=
+&netFramework35=
+&netFramework3=
+&netFramework2=
+&installedRam=
+&computername=
+ Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3
+Startup failed, error: 
+&taskstatus=
+killpersistence
+
+Network Pattern
+---------------
+Ref - https://github.com/albertzsigovits/malware-writeups/tree/master/DarkRATv2
